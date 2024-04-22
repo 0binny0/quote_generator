@@ -5,4 +5,11 @@ function set_rgb_color() {
     ).join(" ")})`;
 }
 
-export { set_rgb_color };
+async function fetch_quotes() {
+    return await fetch(
+        "https://thesimpsonsquoteapi.glitch.me/quotes?count=20"
+    ).then(response => response.json());
+}
+
+
+export { set_rgb_color, fetch_quotes };
