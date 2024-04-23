@@ -13,6 +13,7 @@
         margin: -100px 0 0 0;
         width: 100%;
         min-height: 100vh;
+        transition: background 7000ms linear,
     }
 
     .wrapper {
@@ -30,6 +31,7 @@
 
     .quote_content_wrapper {
         margin: auto;
+        transition: color 8500ms linear;
     }
 
     #text {
