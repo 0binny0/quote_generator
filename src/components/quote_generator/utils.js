@@ -11,5 +11,9 @@ async function fetch_quotes() {
     ).then(response => response.json());
 }
 
+function generate_quote(quotes) {
+    return quotes[Math.floor(Math.random() * quotes.length + 1)]
+}
 
-export { set_rgb_color, fetch_quotes };
+
+export { set_rgb_color, fetch_quotes, generate_quote };
