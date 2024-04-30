@@ -12,7 +12,7 @@ test("Verify that a quote is rendered", () => {
      expect(quote_text).toHaveTextContent("Quote title");
      expect(quote_author).toBeInTheDocument();
      expect(quote_author).toHaveTextContent("Quote author");
-})
+});
 
 test("Verify that buttons to tweet and generate a new quote", () => {
      const quote = {"character": "Me", "text": "To not to be or to be"};
@@ -21,5 +21,4 @@ test("Verify that buttons to tweet and generate a new quote", () => {
      const new_quote_button = screen.getByRole("button", {"name": "View a new quote"});
      expect(current_quote).toHaveTextContent(quote.text);
      expect(new_quote_button).toHaveTextContent("New Quote");
-
 });
